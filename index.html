@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Amazon</h1>
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+            <a href="cart.html" class="cart-button"><i class="fas fa-shopping-cart"></i> Cart</a> 
+            <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i></button> 
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Today's Deals</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">Customer Service</a></li>
+               
+                <li><a href="electronics.html">Electronics</a></li> 
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product">
+                <img src="Images/IPAD.jpg" alt="Tablet">
+                <h3>Smartphone</h3>
+                <p>Description of Smartphone</p>
+                <p>$299.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="Images/Iphone.jpg" alt="Smartphone">
+                <h3>Tablet</h3>
+                <p>Description of Tablet</p>
+                <p>$199.99</p>
+                <button>Add to Cart</button>
+            </div>
+           
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Amazon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            
+            if (body.classList.contains('dark-theme')) {
+                themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            } else {
+                themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            }
+        });
+    </script>
+</body>
+</html>

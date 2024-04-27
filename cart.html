@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Cart</title>
+    <link rel="stylesheet" href="cart-styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Amazon</h1>
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Today's Deals</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">Customer Service</a></li>
+               
+                <li><a href="electronics.html">Electronics</a></li> 
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h2>Your Cart</h2>
+            <div class="cart-item">
+                <img src="Images/Iphone.jpg" alt="Smartphone">
+                <div class="item-details">
+                    <h3>Smartphone</h3>
+                    <p>$299.99</p>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                    <p>Total: $299.99</p>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="Images/IPAD.jpg" alt="Tablet">
+                <div class="item-details">
+                    <h3>Tablet</h3>
+                    <p>$199.99</p>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                    <p>Total: $199.99</p>
+                </div>
+            </div>
+            
+            <div class="total">
+                <h3>Total Price:</h3>
+                <p>$499.98</p> 
+            </div>
+            <button>Proceed to Checkout</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Amazon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
